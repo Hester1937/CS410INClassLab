@@ -18,15 +18,23 @@ public class CILabTest {
         myString = null;
     }
 
-    @Test
     public void detectCapitalUseTest1() {
-       fail("Not yet implemented");
-
+        assertTrue(myString.detectCapitalUse("HELLO1"));
     }
+
     @Test
     public void detectCapitalUseTest2() {
-        fail("Not yet implemented");
+        assertTrue(myString.detectCapitalUse("hello2"));
     }
 
+    @Test
+    public void detectCapitalUseTest3() {
+        assertFalse(myString.detectCapitalUse("Hello3"));
+    }
+
+    @Test
+    public void detectCapitalUseTest4() {
+        assertFalse(myString.detectCapitalUse("HeLLo4"));
+    }
 
 }
