@@ -20,26 +20,22 @@ public class CILabTest {
 
     @Test
     public void detectCapitalUseTest1() {
-        myString.setString("HELLO1");
+        myString.setString("HELLO");
         assertTrue(myString.detectCapitalUse());
     }
-
     @Test
     public void detectCapitalUseTest2() {
-        myString.setString("hello2");
+        myString.setString("hello");
         assertTrue(myString.detectCapitalUse());
     }
-
     @Test
     public void detectCapitalUseTest3() {
-        myString.setString("Hello3");
+        myString.setString("Hello");
         assertFalse(myString.detectCapitalUse());
     }
-
     @Test
     public void detectCapitalUseTest4() {
-        myString.setString("HeLLo4");
+        myString.setString("HeLLo");
         assertFalse(myString.detectCapitalUse());
     }
-
 }
