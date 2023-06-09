@@ -17,7 +17,7 @@ public class CILab implements CILabInterface {
             return false;
         }
 
-        boolean allUpperCase = true;
+  /*      boolean allUpperCase = true;
         boolean allLowerCase = true;
 
         for (char c : myString.toCharArray()) {
@@ -29,6 +29,21 @@ public class CILab implements CILabInterface {
         }
 
         return allUpperCase || allLowerCase;
+    }
+
+    */ 
+
+       // count number of capital letters in string & add to char array
+        int count = 0;
+        for (int i = 0; i < myString.length(); i++) {
+            char[] c = myString.toCharArray();
+            if (Character.isUpperCase(myString.charAt(i))) {
+                count++;
+            }
+        }
+
+        // count = 0 --> all lower ; count = myString.length() --> all upper
+        return (count == 0 || count == myString.length() || count == 1 && Character.isUpperCase(myString.charAt(0)));
     }
 }
 
