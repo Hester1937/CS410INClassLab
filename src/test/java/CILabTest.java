@@ -40,7 +40,7 @@ public class CILabTest {
     }
 
     @Test
-    public void detectCapitalUseTest4() {
+    public void detectCapitalUseTest5() {
         myString.setString("HELLo");
         assertFalse(myString.detectCapitalUse());
     }
